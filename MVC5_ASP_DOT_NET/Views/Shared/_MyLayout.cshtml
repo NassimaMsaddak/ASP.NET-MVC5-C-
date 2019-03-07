@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+    <title>@ViewBag.Title </title> 
+    @RenderSection("ExternalCSS", false);
+</head>
+<body>
+
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("ExternalJS", false); <!-- section non obliatoire (optionnel) -->
+    <!--  RenderSection("TestSectionObliatoireEtNonDefinie", true);  // section obliatoire (true)  donc génère une exception si on ne le met pas  -->
+</body>
+</html>
+

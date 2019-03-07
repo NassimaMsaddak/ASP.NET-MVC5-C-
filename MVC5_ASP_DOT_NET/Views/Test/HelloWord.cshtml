@@ -1,0 +1,36 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Page Test/HelloWord";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+
+@section  ExternalJS
+{
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#test").fadeOut(); //çàd  l'element avec id  test , cacher le au chargement de notre page
+        });
+    </script>
+
+}
+
+@section  ExternalCSS
+{
+    <style>
+        h2 {
+            color: red;
+        }
+    </style>
+ }
+
+<h2> @ViewBag.Title </h2>
+
+
+<p id="test">
+    Exemple de Texte
+</p>
+
+
